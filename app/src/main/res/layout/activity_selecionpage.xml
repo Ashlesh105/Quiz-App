@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b2"
+    tools:context=".Selecionpage">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="20dp"
+        android:text="Choose a topic"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:weightSum="2"
+       android:layout_alignParentBottom="true"
+       android:layout_marginBottom="300dp"
+       android:layout_marginStart="20dp"
+       android:layout_marginEnd="20dp"
+        android:gravity="center"
+       >
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="Science"
+           android:textSize="20sp"
+           style="?android:attr/buttonBarButtonStyle"
+           android:textStyle="bold"
+           android:onClick="sub1"
+           android:layout_margin="15dp"
+           />
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="Social science"
+           android:textSize="20sp"
+           style="?android:attr/buttonBarButtonStyle"
+           android:textStyle="bold"
+           android:onClick="sub2"
+           android:layout_margin="15dp"
+
+           />
+
+   </LinearLayout>
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:weightSum="2"
+       android:layout_alignParentBottom="true"
+       android:layout_marginBottom="150dp"
+       android:layout_marginStart="20dp"
+       android:layout_marginEnd="20dp"
+        android:gravity="center"
+        >
+
+       <Button
+
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="General Knowledge"
+           android:onClick="sub3"
+           android:textSize="20sp"
+           style="?android:attr/buttonBarButtonStyle"
+           android:textStyle="bold"
+
+
+           />
+    <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+        android:text="Programming"
+        style="?android:attr/buttonBarButtonStyle"
+        android:textStyle="bold"
+        android:onClick="sub4"
+        android:textSize="20sp"
+        android:layout_margin="15dp"
+
+        />
+
+   </LinearLayout>
+
+
+
+
+</RelativeLayout>
